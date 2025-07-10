@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Minecraft 粒子图案演示</title>
+		<link rel="stylesheet" href="css/auto.css">
+	</head>
+	<body>
+		<div id="info">Made by <a href="https://space.bilibili.com/693976733?spm_id_from=333.337.0.0" target="_blank">OCEAN</a> Forked by <a href="https://space.bilibili.com/291397844" target="_blank">CooStack</a></div>
+
+		<div class="controller">
+			<div class="add"> <p>+</p> </div>
+		</div>
+		
+		<div class="addMenu">
+			<div class="addMenuItem">
+				<p>f(x) 表达式</p>
+			</div>
+			<div class="addMenuItem">
+				<p>傅里叶</p>
+			</div>
+			<div class="addMenuItem">
+				<p>圆的内接N边形</p>
+			</div>
+		</div>
+		<div class="state">
+			<p id="title">state</p>
+			<table>
+				<tr>
+					<td>partilces:</td>
+					<td id="particles">0</td>
+				</tr>
+			</table>
+			<button class="circular-motion">圆周运动</button>
+			<button class="export">导出 mcfunction</button>
+		</div>
+		<div class="canvas-container"></div>
+	</body>
+	<script src="js/plugins/threejs/three.min.js"></script>
+	<script src="js/plugins/threejs/OrbitControls.js"></script>
+	<script src="js/plugins/jQuery/jQuery v3.6.0.min.js"></script>
+	<script src="js/plugins/jQuery/jquery-ui.min.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="js/main.js"></script>
+	<!-- class -->
+	<script src="js/class/Particle.js"></script>
+	<script src="js/class/Item.js"></script>
+	<script src="js/class/Fourier.js"></script>
+	<script src="js/class/PolygonInCircle.js"></script>
+	<script src="js/class/Vec3d.js"></script>
+	<script src="js/class/Func.js"></script>
+	<script src="js/UIEvent.js"></script>
+	<script src="js/toMcfunction.js"></script>
+</html>
