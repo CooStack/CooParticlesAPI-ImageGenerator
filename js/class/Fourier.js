@@ -11,7 +11,7 @@ class Fourier extends Item {
 		];
 		this.countRotor = 0;
 		this.loop = setInterval(function() {});
-
+		this.rotateX = 90;
 		// UI 控件
 		this.initRotor();
 		this.alterRotorCount();
@@ -66,7 +66,7 @@ class Fourier extends Item {
 									</tr>
 									<tr>
 										<td>翻转</td>
-										<td><input type="number" id="rotateX" step="5" placeholder="rotateX"></td>
+										<td><input type="number" id="rotateX" step="5" value = 90 placeholder="rotateX"></td>
 										<td><input type="number" id="rotateY" step="5" placeholder="rotateY"></td>
 										<td><input type="number" id="rotateZ" step="5" placeholder="rotateZ"></td>
 									</tr>
